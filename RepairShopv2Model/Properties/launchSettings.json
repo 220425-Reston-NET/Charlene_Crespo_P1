@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RepairShopv2Model": {
+      "commandName": "Project",
+      "remoteDebugEnabled": true
+    }
+  }
+}

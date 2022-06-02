@@ -1,0 +1,125 @@
+2022-05-24 08:30:14.496 -04:00 [INF] User going to MainMaenu
+2022-05-24 16:04:56.479 -04:00 [INF] User going to Customer Menu
+2022-05-24 16:05:00.340 -04:00 [INF] User added new customer
+2022-05-25 01:30:57.156 -04:00 [INF] User going to Customer Menu
+2022-05-25 01:31:02.872 -04:00 [INF] User searched a customer
+2022-05-25 01:33:20.414 -04:00 [INF] User going to Customer Menu
+2022-05-25 01:33:22.759 -04:00 [INF] User searched a customer
+2022-05-25 09:29:56.408 -04:00 [INF] User searched a customer
+2022-05-25 09:30:34.998 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:37:14.309 -04:00 [INF] User going to MainMaenu
+2022-05-25 09:37:36.336 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:37:40.634 -04:00 [INF] User added new customer
+2022-05-25 09:38:36.653 -04:00 [WRN] Customer already Exist
+2022-05-25 09:39:09.452 -04:00 [INF] User going to MainMaenu
+2022-05-25 09:40:05.332 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:40:08.204 -04:00 [INF] User added new customer
+2022-05-25 09:41:54.701 -04:00 [WRN] Customer already Exist
+2022-05-25 09:43:11.292 -04:00 [INF] User going to MainMaenu
+2022-05-25 09:43:18.708 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:43:22.172 -04:00 [INF] User searched a customer
+2022-05-25 09:43:43.988 -04:00 [INF] User searched a customer
+2022-05-25 09:44:47.948 -04:00 [INF] User searched a customer
+2022-05-25 09:46:59.044 -04:00 [INF] User searched a customer
+2022-05-25 09:47:20.371 -04:00 [INF] User searched a customer
+2022-05-25 09:48:00.772 -04:00 [INF] User searched a customer
+2022-05-25 09:49:53.843 -04:00 [INF] User searched a customer
+2022-05-25 09:50:02.700 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:50:09.052 -04:00 [INF] User searched a customer
+2022-05-25 09:52:55.312 -04:00 [INF] User searched a customer
+2022-05-25 09:53:04.732 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:53:08.243 -04:00 [INF] User searched a customer
+2022-05-25 09:53:54.059 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:53:56.842 -04:00 [INF] User searched a customer
+2022-05-25 09:55:09.268 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:55:12.258 -04:00 [INF] User searched a customer
+2022-05-25 09:55:30.318 -04:00 [INF] User going to MainMaenu
+2022-05-25 09:55:35.090 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:55:39.338 -04:00 [INF] User searched a customer
+2022-05-25 09:57:46.860 -04:00 [INF] User searched a customer
+2022-05-25 09:57:53.915 -04:00 [INF] User going to Customer Menu
+2022-05-25 09:57:59.314 -04:00 [INF] User searched a customer
+2022-05-25 09:58:34.835 -04:00 [INF] User searched a customer
+2022-05-25 10:07:24.164 -04:00 [INF] User searched a customer
+2022-05-25 10:11:11.986 -04:00 [INF] User going to Customer Menu
+2022-05-25 10:11:14.576 -04:00 [INF] User added new customer
+2022-05-25 10:11:49.755 -04:00 [WRN] Customer already Exist
+2022-05-25 10:19:26.833 -04:00 [INF] User going to MainMaenu
+2022-05-25 10:19:36.833 -04:00 [INF] User going to Customer Menu
+2022-05-25 10:19:41.513 -04:00 [INF] User added new customer
+2022-05-25 10:20:09.181 -04:00 [WRN] Customer already Exist
+2022-05-25 10:22:00.793 -04:00 [INF] User going to MainMaenu
+2022-05-25 10:22:11.761 -04:00 [INF] User going to Customer Menu
+2022-05-25 10:22:14.895 -04:00 [INF] User added new customer
+2022-05-25 10:22:50.121 -04:00 [WRN] Customer already Exist
+2022-05-25 10:23:37.519 -04:00 [INF] User going to MainMaenu
+2022-05-25 10:23:54.929 -04:00 [INF] User going to Customer Menu
+2022-05-25 10:23:57.927 -04:00 [INF] User added new customer
+2022-05-25 10:24:19.615 -04:00 [WRN] Customer already Exist
+2022-05-25 10:24:52.319 -04:00 [INF] User going to MainMaenu
+2022-05-25 10:24:55.479 -04:00 [INF] User going to Customer Menu
+2022-05-25 10:24:59.063 -04:00 [INF] User added new customer
+2022-05-25 10:25:16.955 -04:00 [WRN] Customer already Exist
+2022-05-25 10:26:44.759 -04:00 [INF] User going to MainMaenu
+2022-05-25 10:26:47.495 -04:00 [INF] User going to Customer Menu
+2022-05-25 10:26:50.439 -04:00 [INF] User added new customer
+2022-05-25 10:27:08.135 -04:00 [WRN] Customer already Exist
+2022-05-25 10:29:44.591 -04:00 [INF] User going to MainMaenu
+2022-05-25 10:30:11.024 -04:00 [INF] User going to MainMaenu
+2022-05-25 10:30:27.999 -04:00 [INF] User going to Customer Menu
+2022-05-25 10:30:40.839 -04:00 [INF] User going to MainMaenu
+2022-05-25 11:42:39.567 -04:00 [INF] User going to Customer Menu
+2022-05-25 11:43:00.591 -04:00 [INF] User added new customer
+2022-05-25 11:43:31.132 -04:00 [WRN] Customer already Exist
+2022-05-25 11:44:40.894 -04:00 [INF] User going to MainMaenu
+2022-05-25 11:44:44.854 -04:00 [INF] User going to Customer Menu
+2022-05-25 11:44:47.655 -04:00 [INF] User searched a customer
+2022-05-25 11:45:24.366 -04:00 [INF] User searched a customer
+2022-05-25 11:49:44.368 -04:00 [INF] User searched a customer
+2022-05-25 14:20:14.832 -04:00 [INF] User going to Customer Menu
+2022-05-25 14:20:17.055 -04:00 [INF] User added new customer
+2022-05-25 14:20:53.840 -04:00 [WRN] Customer already Exist
+2022-05-25 14:23:02.449 -04:00 [INF] User going to MainMaenu
+2022-05-25 14:23:13.276 -04:00 [INF] User going to Customer Menu
+2022-05-25 14:23:13.542 -04:00 [INF] User going to Customer Menu
+2022-05-25 14:23:16.676 -04:00 [INF] User added new customer
+2022-05-25 14:24:03.292 -04:00 [WRN] Customer already Exist
+2022-05-25 15:18:46.153 -04:00 [INF] User going to MainMaenu
+2022-05-25 15:19:15.563 -04:00 [INF] User going to Customer Menu
+2022-05-25 15:19:18.463 -04:00 [INF] User added new customer
+2022-05-25 15:19:51.302 -04:00 [WRN] Customer already Exist
+2022-05-25 16:06:37.686 -04:00 [INF] User going to MainMaenu
+2022-05-25 16:06:48.997 -04:00 [INF] User going to Customer Menu
+2022-05-25 16:06:52.459 -04:00 [INF] User added new customer
+2022-05-25 16:09:15.019 -04:00 [INF] User going to Customer Menu
+2022-05-25 16:09:16.864 -04:00 [INF] User added new customer
+2022-05-25 16:10:24.807 -04:00 [INF] User going to Customer Menu
+2022-05-25 16:10:26.682 -04:00 [INF] User added new customer
+2022-05-25 16:10:39.781 -04:00 [INF] User going to MainMaenu
+2022-05-25 16:12:22.991 -04:00 [INF] User going to MainMaenu
+2022-05-25 16:12:29.748 -04:00 [INF] User going to Customer Menu
+2022-05-25 16:12:32.082 -04:00 [INF] User added new customer
+2022-05-25 16:12:44.972 -04:00 [INF] User going to MainMaenu
+2022-05-25 16:38:05.674 -04:00 [INF] User going to Customer Menu
+2022-05-25 16:42:13.394 -04:00 [INF] User searched a customer
+2022-05-25 16:42:56.213 -04:00 [INF] User searched a customer
+2022-05-25 17:09:04.468 -04:00 [INF] User searched a customer
+2022-05-25 19:39:29.064 -04:00 [INF] User searched a customer
+2022-05-25 19:40:06.935 -04:00 [INF] User going to Customer Menu
+2022-05-25 19:40:14.739 -04:00 [INF] User added new customer
+2022-05-25 19:40:46.200 -04:00 [INF] User going to MainMaenu
+2022-05-25 19:43:15.964 -04:00 [INF] User going to Customer Menu
+2022-05-25 19:43:22.685 -04:00 [INF] User searched a customer
+2022-05-25 19:44:58.910 -04:00 [INF] User searched a customer
+2022-05-25 19:45:10.832 -04:00 [INF] User going to Customer Menu
+2022-05-25 19:45:18.355 -04:00 [INF] User going to MainMaenu
+2022-05-25 20:48:00.569 -04:00 [INF] User going to MainMaenu
+2022-05-25 23:41:34.448 -04:00 [INF] User going to Customer Menu
+2022-05-25 23:41:39.793 -04:00 [INF] User searched a customer
+2022-05-25 23:42:12.205 -04:00 [INF] User searched a customer
+2022-05-25 23:42:21.332 -04:00 [INF] User going to Customer Menu
+2022-05-25 23:45:37.128 -04:00 [INF] User going to MainMaenu
+2022-05-25 23:46:00.687 -04:00 [INF] User going to MainMaenu
+2022-05-25 23:47:14.955 -04:00 [INF] User going to MainMaenu
+2022-05-26 00:02:42.556 -04:00 [INF] User going to Customer Menu
+2022-05-26 00:02:46.411 -04:00 [INF] User searched a customer

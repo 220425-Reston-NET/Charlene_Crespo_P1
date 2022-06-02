@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+ <ItemGroup>
+    <ProjectReference Include="..\RepairShopv2Model\RepairShopv2Model.csproj" />
+    <ProjectReference Include="..\RepairShopv2DL\RepairShopv2DL.csproj" />
+  </ItemGroup>
+
+
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
