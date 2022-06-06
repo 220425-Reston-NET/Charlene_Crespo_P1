@@ -15,7 +15,7 @@ namespace RepairShopv2DL
         public void Add(Customers p_cust)
         {
              string SQLQuery = @"insert into Customers 
-                                values (@Name, @Number, @Address, @Email)";
+                                values (@CustID, @Name, @Number, @Address, @Email)";
 
             using (SqlConnection con = new SqlConnection(_connectionString))
             {
@@ -25,6 +25,7 @@ namespace RepairShopv2DL
 
                 //We fill in the parameters we added earlier
                 //We dynamically change information using AddWithValue and Parameters to avoid the risk of SQL Injection attack
+                command.Parameters.AddWithValue("@CustID", p_cust.CustID);
                 command.Parameters.AddWithValue("@Name", p_cust.Name);
                 command.Parameters.AddWithValue("@Number", p_cust.Number);
                 command.Parameters.AddWithValue("@Address", p_cust.Address);
@@ -50,10 +51,11 @@ namespace RepairShopv2DL
                while (reader.Read())
                {
                    listofCustomers.Add(new Customers(){
-                       Name = reader.GetString(0),
-                       Number = reader.GetInt64(1),
-                       Address = reader.GetString(2),
-                       Email = reader.GetString(3)
+                       CustID = reader.GetInt32(0),
+                       Name = reader.GetString(1),
+                       Number = reader.GetInt64(2),
+                       Address = reader.GetString(3),
+                       Email = reader.GetString(4)
 
                    });
                }

@@ -16,7 +16,7 @@ namespace RepairShopv2DL
         public void Add(Order p_Order)
         {
             string SQLQuery = @"insert into Orders
-                                values (@Name, @Location, @RepairType, @NumberofDevice, @DeviceType, @Total)";
+                                values (@OrderID, @CustID, @StoreID, @TotalPrice)";
 
             using (SqlConnection con = new SqlConnection(_connectionString))
             {
@@ -26,12 +26,10 @@ namespace RepairShopv2DL
 
                 //We fill in the parameters we added earlier
                 //We dynamically change information using AddWithValue and Parameters to avoid the risk of SQL Injection attack
-                command.Parameters.AddWithValue("@Name", p_Order.Name);
-                command.Parameters.AddWithValue("@Location", p_Order.Location);
-                command.Parameters.AddWithValue("@RepairType", p_Order.RepairType);
-                command.Parameters.AddWithValue("@NumberofDevice", p_Order.NumofDevice);
-                command.Parameters.AddWithValue("@DeviceType", p_Order.DeviceType);
-                command.Parameters.AddWithValue("@Total", p_Order.TotalPrice);
+                command.Parameters.AddWithValue("@OrderID", p_Order.OrderID);
+                command.Parameters.AddWithValue("@CustID", p_Order.CustID);
+                command.Parameters.AddWithValue("@StoreID", p_Order.StoreID);
+                command.Parameters.AddWithValue("@TotalPrice", p_Order.TotalPrice);
 
                 //Execute sql statement that is nonquery meaning it will not give any information back (unlike a select statement)
                 command.ExecuteNonQuery();
@@ -53,12 +51,10 @@ namespace RepairShopv2DL
                 while (reader.Read())
                 {
                     listofOrder.Add(new Order(){
-                        Name = reader.GetString(0),
-                        Location = reader.GetString(1),
-                        RepairType = reader.GetString(2),
-                        NumofDevice = reader.GetInt32(3),
-                        DeviceType = reader.GetString(4),
-                        TotalPrice = reader.GetInt32(5)
+                        OrderID = reader.GetInt32(0),
+                        CustID = reader.GetInt32(1),
+                        StoreID = reader.GetInt32(2),
+                        TotalPrice = reader.GetInt32(3)
 
 
                     });

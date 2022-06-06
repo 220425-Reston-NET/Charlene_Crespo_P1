@@ -12,6 +12,6 @@ namespace RepairShopv2BL
        void AddOrder(List<Order> p_order);
 
         //Will Find Order based on name
-        Order SearchOrderByName(string p_OrderName);
+        Order SearchOrderByID(int p_OrderID);
     }
 }

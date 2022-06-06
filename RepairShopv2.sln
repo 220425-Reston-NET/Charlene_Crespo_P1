@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepairShopv2BL", "RepairSho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepairShopv2Api", "RepairShopv2Api\RepairShopv2Api.csproj", "{9993B676-1077-42FF-AD83-379BAB3CD42D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepairShopv2Test", "RepairShopv2Test\RepairShopv2Test.csproj", "{F061072E-A523-4D33-AC98-DFF9BF24158C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -67,6 +69,14 @@ Global
 		{9993B676-1077-42FF-AD83-379BAB3CD42D}.Release|x64.Build.0 = Release|Any CPU
 		{9993B676-1077-42FF-AD83-379BAB3CD42D}.Release|x86.ActiveCfg = Release|Any CPU
 		{9993B676-1077-42FF-AD83-379BAB3CD42D}.Release|x86.Build.0 = Release|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Debug|x64.Build.0 = Debug|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Debug|x86.Build.0 = Debug|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Release|x64.ActiveCfg = Release|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Release|x64.Build.0 = Release|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Release|x86.ActiveCfg = Release|Any CPU
+		{F061072E-A523-4D33-AC98-DFF9BF24158C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

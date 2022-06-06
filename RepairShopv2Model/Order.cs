@@ -3,20 +3,16 @@ namespace RepairShopv2Model
 
     public class Order
     {
-        public string Name { get; set; }
-        public string Location { get; set; }
-        public string RepairType { get; set; }
-
-        private int _NumofDevice;
-        public int NumofDevice
+        private int _OrderID;
+        public int OrderID
         {
-            get { return _NumofDevice; }
+            get { return _OrderID; }
 
             set
             {
                 if (value > 0)
                 {
-                    _NumofDevice = value;
+                    _OrderID = value;
                 }
                 else
                 {
@@ -25,44 +21,80 @@ namespace RepairShopv2Model
             }
         
         }
-        
-        public string DeviceType { get; set; }
 
+        private int _CustID;
+        public int CustID
+        {
+            get { return CustID; }
+            set 
+            { 
+                if (value > 0)
+                {
+                    _CustID = value; 
+                }
+                else
+                {
+                    Console.WriteLine();
+                }
+            }
+        }
+        private int _StoreID;
+        public int StoreID
+        {
+            get { return _StoreID; }
 
-        private int _totalPrice;
+            set
+            {
+                if (value > 0)
+                {
+                    _StoreID = value;
+                }
+                else
+                {
+                    Console.WriteLine();
+                }
+            }
+        }
+
+        private int _TotalPrice;
         public int TotalPrice
         {
-            get { return _totalPrice; }
-
-            set
+            get { return _TotalPrice; }
+            set 
             {
                 if (value > 0)
                 {
-                    _totalPrice = value;
+                  _TotalPrice = value; 
+
                 }
                 else
                 {
                     Console.WriteLine();
                 }
             }
-            
         }
+        
+        public List<LineItems> LineItems { get; set; }
 public Order()
         {
-            Name = "Chris";
-            Location = "RepairShop1 123 crandon ave";
-            RepairType = "LCD Screen Replacement";
-            NumofDevice = 1;
-            DeviceType = "Iphone 13 Max";
-            TotalPrice = 200;
+           OrderID = 1;
+           CustID = 1;
+           StoreID = 100;
+           TotalPrice = 200;
+           LineItems = new List<LineItems>();
         }
 
         public override string ToString()
         {
-            return $"=====Order Info=====\nName: {Name}\nLocation: {Location}\nRepairType: {RepairType}\nNumberofDevice: {NumofDevice}\nDeviceType: {DeviceType}\nTotal: {TotalPrice}\n=========";
+            return $"=====Order Info=====\nOrderID: {OrderID}\nCustID: {CustID}\nStoreID: {StoreID}\nTotalPrice: {TotalPrice}\n=========";
         }
 
         public static List<Order> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<Locations> GetAllLocations()
         {
             throw new NotImplementedException();
         }

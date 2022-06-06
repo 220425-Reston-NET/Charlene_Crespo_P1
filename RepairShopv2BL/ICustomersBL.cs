@@ -25,7 +25,5 @@ namespace RepairShopv2BL
 
         Customers SearchCustomerByNumber(long p_Number);
 
-        void AddRepairsToCustomers(Customers p_Customers);
-        Customers SearchCustomerByRepairs(string custRepairs);
     }
 }

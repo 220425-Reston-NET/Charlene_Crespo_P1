@@ -10,12 +10,15 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+// (builder.Configuration.GetConnectionString("Charlene Crespo")
 
 
-builder.Services.AddScoped<IRepository<Customers>, SQLCustomerRepository>(repo => new SQLCustomerRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
+builder.Services.AddScoped<IRepository<Customers>, SQLCustomerRepository>(repo => new SQLCustomerRepository(Environment.GetEnvironmentVariable("Connection_String")));
 builder.Services.AddScoped<ICustomersBL, CustomersBL>();
-builder.Services.AddScoped<IRepository<Order>, SQLOrderRepository>(repo => new SQLOrderRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
+builder.Services.AddScoped<IRepository<Order>, SQLOrderRepository>(repo => new SQLOrderRepository(Environment.GetEnvironmentVariable("Connection_String")));
 builder.Services.AddScoped<IOrderBL, OrderBL>();
+builder.Services.AddScoped<IRepository<LineItems>, SQLlineitemsRepository>(repo => new SQLlineitemsRepository(Environment.GetEnvironmentVariable("Connection_String")));
+builder.Services.AddScoped<ILineItemsBL, LineItemsBL>();
 
 
 var app = builder.Build();

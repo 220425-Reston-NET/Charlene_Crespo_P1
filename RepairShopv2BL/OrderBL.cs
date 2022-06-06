@@ -29,19 +29,24 @@ namespace RepairShopv2BL
             return _OrderRepo.GetAll();
         }
 
-        public Order SearchOrderByName(string p_OrderName)
+        public Order SearchOrderByID(int p_OrderID)
         {
             List<Order> currentListOfOrder = _OrderRepo.GetAll();
 
             foreach (Order OrderObj in currentListOfOrder)
             {
-                if (OrderObj.Name == p_OrderName)
+                if (OrderObj.OrderID == p_OrderID)
                 {
                     return OrderObj;
                 }
             }
 
             return null;
+        }
+
+        public Order SearchOrderByName(string p_OrderName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

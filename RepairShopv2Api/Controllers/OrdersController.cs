@@ -11,10 +11,13 @@ namespace RepairShopv2Api.Controllers
     {
          //=================Dependency Injection=============
         private IOrderBL _orderBL;
+        private ILineItemsBL _lineItemsBL;
 
-        public OrdersController(IOrderBL OrderBL)
+        public OrdersController(IOrderBL OrderBL, ILineItemsBL LineItemsBL)
         {
             _orderBL = OrderBL;
+            _lineItemsBL = LineItemsBL;
+
         }
 
         //=================================================
@@ -35,12 +38,12 @@ namespace RepairShopv2Api.Controllers
             }
         }
 
-        [HttpGet("SearchOrdersByName")]
-        public IActionResult SearchOrders([FromQuery] string OrderName)
+        [HttpGet("SearchOrdersByID")]
+        public IActionResult SearchOrdersByID([FromQuery] int OrderID)
         {
             try
             {
-                return Ok(_orderBL.SearchOrderByName(OrderName));
+                return Ok(_orderBL.SearchOrderByID(OrderID));
             }
             catch (SqlException)
             {

@@ -66,20 +66,5 @@ namespace RepairShopv2BL
 
             return null;
         }
-
-        public Customers SearchCustomerByRepairs(string p_Repairs)
-        {
-            List<Customers> currentListofCust = _CustRepo.GetAll();
-
-            foreach (Customers CustObj in currentListofCust)
-            {
-                if (true)
-                {
-                    return CustObj;
-                }
-            }
-
-            return null;
-        }
     }
 }

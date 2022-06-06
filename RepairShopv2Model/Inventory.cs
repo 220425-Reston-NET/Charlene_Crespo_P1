@@ -3,15 +3,15 @@ namespace RepairShopv2Model
     public class Inventory
     {
 
-        private int _Price;
-        public int Price
+        private int _StoreID;
+        public int StoreID
         {
-            get { return _Price; }
+            get { return _StoreID; }
             set
             {
                 if (value > 0)
                 {
-                    _Price = value;
+                    _StoreID = value;
                 }
                 else
                 {
@@ -20,15 +20,15 @@ namespace RepairShopv2Model
             }
         }
             
-            private int _PartID;
-            public int PartID
+            private int _ProdID;
+            public int ProdID
             {
-                get { return _PartID; }
+                get { return _ProdID; }
                 set 
                 { 
                     if (value > 0)
                     {
-                        _PartID = value;
+                        _ProdID = value;
                     }
                     else
                     {
@@ -38,15 +38,15 @@ namespace RepairShopv2Model
                 }
             }
 
-            private int _Quantity;
-            public int Quantity
+            private int _QTY;
+            public int QTY
             {
-                get { return _Quantity; }
+                get { return _QTY; }
                 set 
                 { 
                     if (value > 0)
                     {
-                        _Quantity = value; 
+                        _QTY = value; 
                     }
                     else
                     {
@@ -54,26 +54,22 @@ namespace RepairShopv2Model
                     }
                 }
             }
-            
-            
-        
-
-        public string LocationName { get; set; }
-        public string PartName { get; set; }
+             public string Description { get; set; }
+             public List<Products> Products { get; set; }
+             public List<Locations> Locations { get; set; }
     
         // Everytime you make a new model, Make sure you create a constructor
         public Inventory()
         {
-            LocationName = "RepairShop1";
-            PartID = 1;
-            PartName = "Iphone 13 Max LCD Screen";
-            Quantity = 50;
-            Price = 200;
+            StoreID = 100;
+            ProdID = 010;
+            Description = "Iphone 13 Max LCD Screen Replacement";
+            QTY = 50;
         }
 
         public override string ToString()
         {
-            return $"=====Inventory Info=====\nLocationName: {LocationName}\nPartID: {PartID}\nPartName {PartName}\nQuantity {Quantity}\nPrice {Price}\n=========";
+            return $"=====Inventory Info=====\nStoreID: {StoreID}\nProdID: {ProdID}\nDescription: {Description}\nQTY {QTY}\n=========";
         }
 
         public static List<Inventory> GetAll()
