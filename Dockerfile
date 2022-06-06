@@ -1,7 +1,7 @@
 #Another stage that is all about running the application or how to run
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
+from mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
 
-WORKDIR /app
+workdir /app
 
 # COPY --from=build /app/publish ./
 
