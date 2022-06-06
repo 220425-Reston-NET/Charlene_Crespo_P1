@@ -12,4 +12,4 @@ cmd ["dotnet", "RepairShopv2Api.dll"]
 #Expose to port 5000
 expose 5000
 
-env ASPNETCORE_URLS=https://+:5000
+env ASPNETCORE_URLS=http://+:5000
