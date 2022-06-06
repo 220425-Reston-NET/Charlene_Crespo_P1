@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 // Environment.GetEnvironmentVariable("Connection_String"
 
 
-builder.Services.AddScoped<IRepository<Customers>, SQLCustomerRepository>(repo => new SQLCustomerRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
+builder.Services.AddScoped<IRepository<Customers>, SQLCustomerRepository>(repo => new SQLCustomerRepository(Environment.GetEnvironmentVariable("Connection_String")));
 builder.Services.AddScoped<ICustomersBL, CustomersBL>();
 builder.Services.AddScoped<IRepository<Order>, SQLOrderRepository>(repo => new SQLOrderRepository(Environment.GetEnvironmentVariable("Connection_String")));
 builder.Services.AddScoped<IOrderBL, OrderBL>();
