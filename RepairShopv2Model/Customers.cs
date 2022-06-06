@@ -19,9 +19,9 @@ namespace RepairShopv2Model
             get { return _Number; }
             set
             {
-                if (Number > 10)
+                if (value > 999999999)
                 {
-                    _Number = Number;
+                    _Number = value;
                 }
                 else
                 {

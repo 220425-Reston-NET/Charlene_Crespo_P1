@@ -11,7 +11,7 @@ phases:
     commands:
       - echo 'Restoring dependencies of each project (the packets)'
       - dotnet restore
-      # - dotnet test --no-restore
+      - dotnet test --no-restore
 
   build:
     commands:
