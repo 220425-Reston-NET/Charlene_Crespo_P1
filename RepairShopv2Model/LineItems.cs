@@ -19,6 +19,8 @@ namespace RepairShopv2Model
                 }
             }
         }
+
+        public string Description { get; set; }
             
             private int _ProdID;
             public int ProdID
@@ -56,8 +58,8 @@ namespace RepairShopv2Model
             }
             
 
-            private int _AMT;
-            public int AMT
+            private float _AMT;
+            public float AMT
             {
                 get { return _AMT; }
                 set 
@@ -72,7 +74,6 @@ namespace RepairShopv2Model
                     }
                 }
             }
-             public string Description { get; set; }
     
         // Everytime you make a new model, Make sure you create a constructor
         public LineItems()
@@ -81,7 +82,7 @@ namespace RepairShopv2Model
             ProdID = 010;
             Description = "Iphone 13 Max LCD Screen Replacement";
             QTY = 1;
-            AMT = 200;
+            AMT = 200.00F;
         }
 
         public override string ToString()
