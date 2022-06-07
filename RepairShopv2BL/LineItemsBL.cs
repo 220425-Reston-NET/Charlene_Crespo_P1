@@ -12,7 +12,6 @@ namespace RepairShopv2BL
         {
             _LineItemsRepo = p_LineItemsRepo;
         }
-
         public void AddLineItem(LineItems p_line)
         {
            _LineItemsRepo.Add(p_line);
