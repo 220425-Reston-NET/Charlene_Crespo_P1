@@ -35,12 +35,13 @@ namespace RepairShopv2DL
                 command.ExecuteNonQuery();
             }
         }
-        public void Update(LineItems p_resource)
+
+        public List<LineItems> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        List<LineItems> IRepository<LineItems>.GetAll()
+        public void Update(LineItems p_resource)
         {
             throw new NotImplementedException();
         }

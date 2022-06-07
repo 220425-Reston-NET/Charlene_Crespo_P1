@@ -54,7 +54,7 @@ namespace RepairShopv2DL
                         OrderID = reader.GetInt32(0),
                         CustID = reader.GetInt32(1),
                         StoreID = reader.GetInt32(2),
-                        TotalPrice = reader.GetInt32(3)
+                        TotalPrice = reader.GetDecimal(3)
 
 
                     });
@@ -65,7 +65,7 @@ namespace RepairShopv2DL
         }
            public void Update(Order p_Order)
         {
-        
+            throw new NotImplementedException();
         }
     }
 }

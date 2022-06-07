@@ -25,7 +25,7 @@ namespace RepairShopv2Model
         private int _CustID;
         public int CustID
         {
-            get { return CustID; }
+            get { return _CustID; }
             set 
             { 
                 if (value > 0)
@@ -56,8 +56,8 @@ namespace RepairShopv2Model
             }
         }
 
-        private int _TotalPrice;
-        public int TotalPrice
+        private decimal _TotalPrice;
+        public decimal TotalPrice
         {
             get { return _TotalPrice; }
             set 
