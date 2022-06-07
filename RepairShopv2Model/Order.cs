@@ -56,8 +56,8 @@ namespace RepairShopv2Model
             }
         }
 
-        private float _TotalPrice;
-        public float TotalPrice
+        private decimal _TotalPrice;
+        public decimal TotalPrice
         {
             get { return _TotalPrice; }
             set 
@@ -80,7 +80,7 @@ public Order()
            OrderID = 1;
            CustID = 1;
            StoreID = 100;
-           TotalPrice = 200.00F;
+           TotalPrice = 200.00M;
            LineItems = new List<LineItems>();
         }
 
