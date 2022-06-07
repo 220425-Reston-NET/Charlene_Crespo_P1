@@ -58,8 +58,8 @@ namespace RepairShopv2Model
             }
             
 
-            private float _AMT;
-            public float AMT
+            private int _AMT;
+            public int AMT
             {
                 get { return _AMT; }
                 set 
@@ -82,7 +82,7 @@ namespace RepairShopv2Model
             ProdID = 010;
             Description = "Iphone 13 Max LCD Screen Replacement";
             QTY = 1;
-            AMT = 200.00F;
+            AMT = 200;
         }
 
         public override string ToString()
