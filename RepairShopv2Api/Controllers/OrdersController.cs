@@ -22,7 +22,7 @@ namespace RepairShopv2Api.Controllers
 
         //=================================================
         [HttpGet("GetAllOrders")]
-        public IActionResult GetAll()
+        public IActionResult GetAllOrders()
         {
 
             try
