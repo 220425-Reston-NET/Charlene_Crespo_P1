@@ -3,100 +3,16 @@ namespace RepairShopv2Model
 
     public class Order
     {
-        private int _OrderID;
-        public int OrderID
-        {
-            get { return _OrderID; }
-
-            set
-            {
-                if (value > 0)
-                {
-                    _OrderID = value;
-                }
-                else
-                {
-                    Console.WriteLine();
-                }
-            }
-        
-        }
-
-        private int _CustID;
-        public int CustID
-        {
-            get { return _CustID; }
-            set 
-            { 
-                if (value > 0)
-                {
-                    _CustID = value; 
-                }
-                else
-                {
-                    Console.WriteLine();
-                }
-            }
-        }
-        private int _StoreID;
-        public int StoreID
-        {
-            get { return _StoreID; }
-
-            set
-            {
-                if (value > 0)
-                {
-                    _StoreID = value;
-                }
-                else
-                {
-                    Console.WriteLine();
-                }
-            }
-        }
-
-        private decimal _TotalPrice;
-        public decimal TotalPrice
-        {
-            get { return _TotalPrice; }
-            set 
-            {
-                if (value > 0)
-                {
-                  _TotalPrice = value; 
-
-                }
-                else
-                {
-                    Console.WriteLine();
-                }
-            }
-        }
-        
+        public int OrderID { get; set; }
+        public int CustID { get; set; }
+        public decimal TotalPrice { get; set; }
         public List<LineItems> LineItems { get; set; }
 public Order()
         {
-           OrderID = 1;
-           CustID = 1;
-           StoreID = 100;
-           TotalPrice = 200;
+           OrderID = 0;
+           CustID = 0;
+           TotalPrice = 0;
            LineItems = new List<LineItems>();
-        }
-
-        public override string ToString()
-        {
-            return $"=====Order Info=====\nOrderID: {OrderID}\nCustID: {CustID}\nStoreID: {StoreID}\nTotalPrice: {TotalPrice}\n=========";
-        }
-
-        public static List<Order> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public static List<Locations> GetAllLocations()
-        {
-            throw new NotImplementedException();
         }
     }
 }

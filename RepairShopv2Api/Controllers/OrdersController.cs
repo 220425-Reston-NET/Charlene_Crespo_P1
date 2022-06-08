@@ -37,13 +37,20 @@ namespace RepairShopv2Api.Controllers
                 return NotFound("No Order Exist");
             }
         }
+    
 
-        [HttpGet("SearchOrdersByID")]
-        public IActionResult SearchOrdersByID([FromQuery] int OrderID)
+        [HttpPost("AddOrder")]
+
+        public IActionResult Add([FromBody] Order p_orders)
         {
-            try
+           try
             {
-                return Ok(_orderBL.SearchOrderByID(OrderID));
+                _orderBL.Add(p_orders);
+               
+
+                return Created("Order was created!", p_orders);
+                
+            
             }
             catch (SqlException)
             {

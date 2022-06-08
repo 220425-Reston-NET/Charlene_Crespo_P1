@@ -16,10 +16,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IRepository<Customers>, SQLCustomerRepository>(repo => new SQLCustomerRepository(Environment.GetEnvironmentVariable("Connection_String")));
 builder.Services.AddScoped<ICustomersBL, CustomersBL>();
-builder.Services.AddScoped<IRepository<Order>, SQLOrderRepository>(repo => new SQLOrderRepository(Environment.GetEnvironmentVariable("Connection_String")));
+builder.Services.AddScoped<IRepository<Order>, SQLOrderRepository>(repo => new SQLOrderRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
 builder.Services.AddScoped<IOrderBL, OrderBL>();
-builder.Services.AddScoped<IRepository<LineItems>, SQLlineitemsRepository>(repo => new SQLlineitemsRepository(Environment.GetEnvironmentVariable("Connection_String")));
+builder.Services.AddScoped<IRepository<LineItems>, SQLlineitemsRepository>(repo => new SQLlineitemsRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
 builder.Services.AddScoped<ILineItemsBL, LineItemsBL>();
+builder.Services.AddScoped<IRepository<Locations>, SQLLocationRepository>(repo => new SQLLocationRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
+builder.Services.AddScoped<ILocationBL, LocationBL>();
 
 
 var app = builder.Build();

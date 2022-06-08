@@ -15,7 +15,7 @@ namespace RepairShopv2DL
         public void Add(Customers p_cust)
         {
              string SQLQuery = @"insert into Customers 
-                                values (@CustID, @Name, @Number, @Address, @Email)";
+                                values (@Name, @Number, @Address, @Email)";
 
             using (SqlConnection con = new SqlConnection(_connectionString))
             {
@@ -51,7 +51,6 @@ namespace RepairShopv2DL
                while (reader.Read())
                {
                    listofCustomers.Add(new Customers(){
-                       CustID = reader.GetInt32(0),
                        Name = reader.GetString(1),
                        Number = reader.GetInt64(2),
                        Address = reader.GetString(3),

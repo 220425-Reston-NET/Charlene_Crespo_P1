@@ -43,10 +43,9 @@ namespace RepairShopv2Api.Controllers
            try
             {
                 _CustBL.AddCustomer(p_cust);
-                _OrderBL.AddOrder(p_cust.Order);
-
+               
                 return Created("Customer was created!", p_cust);
-                return Created("Order was placed", p_cust.Order);
+               
             
             }
             catch (SqlException)

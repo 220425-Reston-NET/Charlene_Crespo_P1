@@ -8,10 +8,11 @@ namespace RepairShopv2BL
         // Will give you all of the Order from DB
         List<Order> GetAllOrders();
         
-        // Will add Order to DB
-       void AddOrder(List<Order> p_order);
-
         //Will Find Order based on name
-        Order SearchOrderByID(int p_OrderID);
+        Order SearchOrderByStoreID(int p_StoreID);
+
+        // Will add Order to DB
+        void Add(Order p_order);
+        // void AddOrder(List<Order> order);
     }
 }

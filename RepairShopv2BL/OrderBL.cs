@@ -12,15 +12,16 @@ namespace RepairShopv2BL
             _OrderRepo = p_OrderRepo;
         }
 
-        public void AddOrder(List<Order> p_order)
+        public void Add(Order p_order)
         {
-           foreach (Order item in p_order)
-           {
-               _OrderRepo.Add(item);
-           }
-            
+                _OrderRepo.Add(p_order);
         }
-    
+
+        // public void AddOrder(List<Order> order)
+        // {
+        //     _OrderRepo = 
+        // }
+
 
         //===========================
 
@@ -45,6 +46,11 @@ namespace RepairShopv2BL
         }
 
         public Order SearchOrderByName(string p_OrderName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Order SearchOrderByStoreID(int p_StoreID)
         {
             throw new NotImplementedException();
         }

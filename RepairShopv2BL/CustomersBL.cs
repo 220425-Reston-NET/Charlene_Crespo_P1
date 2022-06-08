@@ -26,12 +26,6 @@ namespace RepairShopv2BL
             }
         }
 
-        public void AddRepairsToCustomers(Customers p_Customers)
-        {
-            //Logic to update Customer
-            _CustRepo.Update(p_Customers);
-        }
-
         public List<Customers> GetAllCustomers()
         {
             return _CustRepo.GetAll();

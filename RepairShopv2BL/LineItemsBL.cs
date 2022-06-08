@@ -16,5 +16,10 @@ namespace RepairShopv2BL
         {
            _LineItemsRepo.Add(p_line);
         }
+
+        public List<LineItems> GetAllLineItems()
+        {
+            return _LineItemsRepo.GetAll();
+        }
     }
 }

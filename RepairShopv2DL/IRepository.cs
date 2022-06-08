@@ -15,7 +15,7 @@ namespace RepairShopv2DL
         /// </summary>
         /// <param name="p_cust">This is the resource being saved to the database</param>
 
-        void Add(T p_cust);
+        void Add(T p_resource);
 
         /// <summary>
         /// This will get all the specific resource from the database

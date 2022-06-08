@@ -28,7 +28,6 @@ namespace RepairShopv2DL
                 //We dynamically change information using AddWithValue and Parameters to avoid the risk of SQL Injection attack
                 command.Parameters.AddWithValue("@OrderID", p_Order.OrderID);
                 command.Parameters.AddWithValue("@CustID", p_Order.CustID);
-                command.Parameters.AddWithValue("@StoreID", p_Order.StoreID);
                 command.Parameters.AddWithValue("@TotalPrice", p_Order.TotalPrice);
 
                 //Execute sql statement that is nonquery meaning it will not give any information back (unlike a select statement)
@@ -53,8 +52,7 @@ namespace RepairShopv2DL
                     listofOrder.Add(new Order(){
                         OrderID = reader.GetInt32(0),
                         CustID = reader.GetInt32(1),
-                        StoreID = reader.GetInt32(2),
-                        TotalPrice = reader.GetDecimal(3)
+                        TotalPrice = reader.GetDecimal(2)
 
 
                     });
