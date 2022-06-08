@@ -20,7 +20,7 @@ builder.Services.AddScoped<IRepository<Order>, SQLOrderRepository>(repo => new S
 builder.Services.AddScoped<IOrderBL, OrderBL>();
 builder.Services.AddScoped<IRepository<LineItems>, SQLlineitemsRepository>(repo => new SQLlineitemsRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
 builder.Services.AddScoped<ILineItemsBL, LineItemsBL>();
-builder.Services.AddScoped<IRepository<Locations>, SQLLocationRepository>(repo => new SQLLocationRepository(builder.Configuration.GetConnectionString("Charlene Crespo")));
+builder.Services.AddScoped<IRepository<Locations>, SQLLocationRepository>(repo => new SQLLocationRepository(Environment.GetEnvironmentVariable("Connection_String")));
 builder.Services.AddScoped<ILocationBL, LocationBL>();
 
 
