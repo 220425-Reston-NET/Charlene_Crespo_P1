@@ -12,6 +12,7 @@ namespace RepairShopv2Model
         {
             StoreID = 0;
             Name = "Default";
+            Products = new List<Products>();
         }
     } 
 }
