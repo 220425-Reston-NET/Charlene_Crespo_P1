@@ -22,7 +22,7 @@ namespace RepairShopv2DL
             string jsonString = File.ReadAllText(_filepath);
             List<Customers> listofCustomers = JsonSerializer.Deserialize<List<Customers>>(jsonString);
 
-            return listofCustomers;
+           return listofCustomers;
         }
 
         public void Update(Customers p_resource)
